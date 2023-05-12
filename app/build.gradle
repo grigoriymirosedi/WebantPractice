@@ -44,4 +44,7 @@ dependencies {
 
     //Splash screen api
     implementation 'androidx.core:core-splashscreen:1.0.0'
+
+    //Material design
+    implementation 'com.google.android.material:material:1.9.0'
 }
