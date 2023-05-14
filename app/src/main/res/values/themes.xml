@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.WebantPractice" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.WebantPractice" parent="Theme.MaterialComponents.Light">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">#FFFFFF</item>
@@ -12,6 +12,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">#000000</item>
         <!-- Customize your theme here. -->
+        <item name="colorOnSurfaceVariant">#919191</item>
+        <item name="colorSurfaceContainer">#FFFFFF</item>
+        
     </style>
 
     <style name="sign_in_text" parent="TextAppearance.Design.Hint">
@@ -19,4 +22,5 @@
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textColor">#C4C4C4</item>
     </style>
+
 </resources>
