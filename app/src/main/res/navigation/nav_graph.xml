@@ -8,8 +8,8 @@
         android:name="com.example.webantpractice.screens.HomeFragment"
         android:label="HomeFragment" >
         <action
-            android:id="@+id/action_homeFragment_to_selectedPhotoFragment2"
-            app:destination="@id/selectedPhotoFragment2" />
+            android:id="@+id/action_homeFragment_to_selectedPhotoFragment"
+            app:destination="@id/selectedPhotoFragment" />
     </fragment>
     <fragment
         android:id="@+id/setPhotoDataFragment"
@@ -20,23 +20,25 @@
         android:name="com.example.webantpractice.screens.UserProfileFragment"
         android:label="UserProfileFragment" >
         <action
-            android:id="@+id/action_userProfileFragment_to_userProfileSettingsFragment2"
-            app:destination="@id/userProfileSettingsFragment2" />
+            android:id="@+id/action_userProfileFragment_to_userProfileSettingsFragment"
+            app:destination="@id/userProfileSettingsFragment"
+            app:enterAnim="@android:anim/fade_in" />
     </fragment>
     <fragment
-        android:id="@+id/selectedPhotoFragment2"
+        android:id="@+id/selectedPhotoFragment"
         android:name="com.example.webantpractice.screens.SelectedPhotoFragment"
         android:label="SelectedPhotoFragment" >
         <action
-            android:id="@+id/action_selectedPhotoFragment2_to_homeFragment"
+            android:id="@+id/action_selectedPhotoFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/userProfileSettingsFragment2"
+        android:id="@+id/userProfileSettingsFragment"
         android:name="com.example.webantpractice.screens.UserProfileSettingsFragment"
         android:label="UserProfileSettingsFragment" >
         <action
-            android:id="@+id/action_userProfileSettingsFragment2_to_userProfileFragment"
-            app:destination="@id/userProfileFragment" />
+            android:id="@+id/action_userProfileSettingsFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
 </navigation>
