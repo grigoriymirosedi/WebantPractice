@@ -234,9 +234,8 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/sign_in_btn"
+        android:id="@+id/sign_up_btn"
         style="@style/ThemeOverlay.Material3.Button.TextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -244,7 +243,7 @@
         android:layout_marginTop="17dp"
         android:layout_marginEnd="136dp"
         android:fontFamily="@font/roboto"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
@@ -258,7 +257,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/sign_up_btn"
+        android:id="@+id/sign_in_btn"
         style="@style/ThemeOverlay.Material3.Button.TextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -267,7 +266,7 @@
         android:layout_marginEnd="136dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/roboto"
-        android:text="Sign Up"
+        android:text="Sign In"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#000000"
@@ -279,6 +278,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_in_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
