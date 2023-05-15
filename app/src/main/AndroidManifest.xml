@@ -13,7 +13,15 @@
         android:theme="@style/Theme.App.WebantSplashScreen"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".SignInActivity"
+            android:exported="false"
+            android:theme="@style/Theme.WebantPractice"/>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.WebantPractice"/>
+        <activity
+            android:name=".WelcomeScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.App.WebantSplashScreen">
             <intent-filter>
@@ -21,11 +29,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WebantPractice">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

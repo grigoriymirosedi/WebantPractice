@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/homeFragment"
         android:enabled="true"
         android:icon="@drawable/home_menu_icon_24"
         android:title="Home"/>
 
     <item
-        android:id="@+id/gallery"
+        android:id="@+id/setPhotoDataFragment"
         android:enabled="true"
         android:icon="@drawable/gallery_menu_icon_24"
         android:title="Gallery"/>
 
     <item
-        android:id="@+id/profile"
+        android:id="@+id/userProfileFragment"
         android:enabled="true"
         android:icon="@drawable/profile_menu_icon_24"
         android:title="Profile"/>
