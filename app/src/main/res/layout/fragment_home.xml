@@ -46,24 +46,25 @@
         app:tabSelectedTextColor="#000000"
         app:tabTextColor="#C4C4C4">
 
-        <!--        <com.google.android.material.tabs.TabItem-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:text="New" />-->
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New" />
 
-        <!--        <com.google.android.material.tabs.TabItem-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:text="Popular" />-->
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular" />
 
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
+        android:id="@+id/gallery_recycler_view"
         android:layout_width="0dp"
+        tools:listitem="@layout/gallery_photo_item"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="185dp"
-        android:visibility="gone"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout"
@@ -88,9 +89,9 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/roboto"
         android:text="Sorry!"
-        android:visibility="gone"
         android:textColor="#C4C4C4"
         android:textSize="17sp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/loading_error_image"
         app:layout_constraintStart_toStartOf="@+id/loading_error_image"
         app:layout_constraintTop_toBottomOf="@+id/loading_error_image" />
@@ -104,11 +105,11 @@
         android:layout_marginEnd="130dp"
         android:fontFamily="@font/roboto"
         android:lines="2"
-        android:visibility="gone"
         android:text="There are no pictures. Please come back later."
         android:textAlignment="center"
         android:textColor="#C4C4C4"
         android:textSize="12sp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loading_error_titile_tv" />
@@ -119,6 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:indeterminateTint="#C4C4C4"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
