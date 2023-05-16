@@ -1,4 +1,4 @@
-package com.example.webantpractice.screens
+package com.example.webantpractice.screens.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
-import com.example.webantpractice.adapter.GalleryPhotoAdapter
+import com.example.webantpractice.R
+import com.example.webantpractice.adapters.GalleryPhotoAdapter
 import com.example.webantpractice.databinding.FragmentHomeBinding
 import com.example.webantpractice.models.GalleryPhotoItem
 
@@ -25,7 +25,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
-        galleryRecyclerView = binding.galleryRecyclerView
+        galleryRecyclerView = binding.galleryPhotoRv
         return binding.root
     }
 
@@ -33,18 +33,18 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //Note: delete later. Made it just to test RV
-        var galleryList = listOf<GalleryPhotoItem>(
-            GalleryPhotoItem("Картинка 1", "Описание 1", 1),
-            GalleryPhotoItem("Картинка 2", "Описание 2", 2),
-            GalleryPhotoItem("Картинка 3", "Описание 3", 3),
-            GalleryPhotoItem("Картинка 4", "Описание 4", 4),
-            GalleryPhotoItem("Картинка 5", "Описание 5", 5),
-            GalleryPhotoItem("Картинка 6", "Описание 6", 6),
-            GalleryPhotoItem("Картинка 7", "Описание 7", 7),
-            GalleryPhotoItem("Картинка 8", "Описание 8", 8),
-            GalleryPhotoItem("Картинка 9", "Описание 9", 9),
-            GalleryPhotoItem("Картинка 10", "Описание 10", 10)
-        )
+        val drawablesList = listOf<Int>(
+            R.drawable.sample_image1, R.drawable.sample_image2,
+            R.drawable.sample_image3, R.drawable.sample_image4,
+            R.drawable.sample_image5, R.drawable.sample_image6,
+            R.drawable.sample_image7, R.drawable.sample_image8,
+            R.drawable.sample_image9, R.drawable.sample_image10,
+            R.drawable.sample_image11)
+        var galleryList = mutableListOf<GalleryPhotoItem>()
+        for(i in 0..15) {
+            galleryList.add(GalleryPhotoItem("Тестовая картинка", "Тестовое описание", drawablesList.random()))
+        }
+
         galleryRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
         galleryAdapter = GalleryPhotoAdapter(galleryList)
         galleryRecyclerView.adapter = galleryAdapter

@@ -1,4 +1,4 @@
-package com.example.webantpractice.screens
+package com.example.webantpractice.screens.fragments
 
 import android.os.Bundle
 import android.util.Log

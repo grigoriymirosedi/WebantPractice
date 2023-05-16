@@ -1,4 +1,4 @@
-package com.example.webantpractice.adapter
+package com.example.webantpractice.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -21,7 +21,7 @@ class GalleryPhotoAdapter(private val galleryPhotoList: List<GalleryPhotoItem>):
 
     override fun onBindViewHolder(viewHolder: GalleryPhotoViewHolder, position: Int) {
         var galleryPhotoItem = galleryPhotoList[position]
-        viewHolder.galleryPhotoImage.setImageResource(R.drawable.sample_image)
+        viewHolder.galleryPhotoImage.setImageResource(galleryPhotoItem.photoURL)
     }
 
     class GalleryPhotoViewHolder(view: View): RecyclerView.ViewHolder(view) {

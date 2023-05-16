@@ -1,4 +1,4 @@
-package com.example.webantpractice
+package com.example.webantpractice.screens.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

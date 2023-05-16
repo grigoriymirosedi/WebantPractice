@@ -1,11 +1,11 @@
-package com.example.webantpractice
+package com.example.webantpractice.screens.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.webantpractice.R
 import com.example.webantpractice.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
