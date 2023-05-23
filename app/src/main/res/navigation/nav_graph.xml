@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_setPhotoDataFragment_to_photoGalleryFragment"
             app:destination="@id/photoGalleryFragment" />
+        <argument
+            android:name="selected_image"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/userProfileFragment"

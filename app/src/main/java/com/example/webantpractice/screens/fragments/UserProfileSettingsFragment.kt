@@ -30,4 +30,10 @@ class UserProfileSettingsFragment : Fragment() {
         }
     }
 
+    //Now, when UserSettings is in pause. Fragment destroy itself (Better solution?)
+    override fun onPause() {
+        super.onPause()
+        onDestroy()
+    }
+
 }

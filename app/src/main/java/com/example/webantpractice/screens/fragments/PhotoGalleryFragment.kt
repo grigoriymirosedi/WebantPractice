@@ -32,7 +32,8 @@ class PhotoGalleryFragment : Fragment() {
                 // Callback is invoked after the user selects media items or closes the
                 // photo picker.
                 if (uri != null) {
-                    Navigation.findNavController(binding.root).navigate(R.id.action_photoGalleryFragment_to_setPhotoDataFragment)
+                    val action = PhotoGalleryFragmentDirections.actionPhotoGalleryFragmentToSetPhotoDataFragment(uri.toString())
+                    Navigation.findNavController(binding.root).navigate(action)
                 } else {
                     binding.errorImageSelectedIv.visibility = View.VISIBLE
                     binding.errorImageTv.visibility = View.VISIBLE

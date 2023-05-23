@@ -9,7 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.net.toUri
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.navArgs
 import com.example.webantpractice.R
 import com.example.webantpractice.databinding.FragmentPhotoGalleryBinding
 import com.example.webantpractice.databinding.FragmentSetPhotoDataBinding
@@ -18,6 +20,8 @@ import com.example.webantpractice.databinding.FragmentSetPhotoDataBinding
 class SetPhotoDataFragment : Fragment() {
 
     private lateinit var binding: FragmentSetPhotoDataBinding
+
+    val args: SetPhotoDataFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,5 +36,6 @@ class SetPhotoDataFragment : Fragment() {
         binding.setPhotoDataToolbar.setNavigationOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.action_setPhotoDataFragment_to_photoGalleryFragment)
         }
+        binding.photoImageIv.setImageURI(args.selectedImage.toUri())
     }
 }
