@@ -5,7 +5,7 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.webantpractice.screens.fragments.HomeFragment"
+        android:name="com.example.webantpractice.presentation.screens.fragments.HomeFragment"
         android:label="HomeFragment" >
         <action
             android:id="@+id/action_homeFragment_to_selectedPhotoFragment"
@@ -13,7 +13,7 @@
     </fragment>
     <fragment
         android:id="@+id/setPhotoDataFragment"
-        android:name="com.example.webantpractice.screens.fragments.SetPhotoDataFragment"
+        android:name="com.example.webantpractice.presentation.screens.fragments.SetPhotoDataFragment"
         android:label="SetPhotoDataFragment" >
         <action
             android:id="@+id/action_setPhotoDataFragment_to_photoGalleryFragment"
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/userProfileFragment"
-        android:name="com.example.webantpractice.screens.fragments.UserProfileFragment"
+        android:name="com.example.webantpractice.presentation.screens.fragments.UserProfileFragment"
         android:label="UserProfileFragment" >
         <action
             android:id="@+id/action_userProfileFragment_to_userProfileSettingsFragment"
@@ -33,7 +33,7 @@
     </fragment>
     <fragment
         android:id="@+id/selectedPhotoFragment"
-        android:name="com.example.webantpractice.screens.fragments.SelectedPhotoFragment"
+        android:name="com.example.webantpractice.presentation.screens.fragments.SelectedPhotoFragment"
         android:label="SelectedPhotoFragment" >
         <action
             android:id="@+id/action_selectedPhotoFragment_to_homeFragment"
@@ -41,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/userProfileSettingsFragment"
-        android:name="com.example.webantpractice.screens.fragments.UserProfileSettingsFragment"
+        android:name="com.example.webantpractice.presentation.screens.fragments.UserProfileSettingsFragment"
         android:label="UserProfileSettingsFragment" >
         <action
             android:id="@+id/action_userProfileSettingsFragment_to_userProfileFragment"
@@ -49,7 +49,7 @@
     </fragment>
     <fragment
         android:id="@+id/photoGalleryFragment"
-        android:name="com.example.webantpractice.screens.fragments.PhotoGalleryFragment"
+        android:name="com.example.webantpractice.presentation.screens.fragments.PhotoGalleryFragment"
         android:label="PhotoGalleryFragment" >
         <action
             android:id="@+id/action_photoGalleryFragment_to_setPhotoDataFragment"

@@ -1,11 +1,11 @@
-package com.example.webantpractice.adapters
+package com.example.webantpractice.presentation.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.webantpractice.models.GalleryPhotoItem
+import com.example.webantpractice.presentation.models.GalleryPhotoItem
 import com.example.webantpractice.R
 
 class GalleryPhotoAdapter(private val galleryPhotoList: List<GalleryPhotoItem>): RecyclerView.Adapter<GalleryPhotoAdapter.GalleryPhotoViewHolder>(){

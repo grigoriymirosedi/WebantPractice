@@ -1,4 +1,4 @@
-package com.example.webantpractice.screens.fragments
+package com.example.webantpractice.presentation.screens.fragments
 
 import android.opengl.Visibility
 import android.os.Bundle

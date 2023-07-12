@@ -1,4 +1,4 @@
-package com.example.webantpractice.screens.fragments
+package com.example.webantpractice.presentation.screens.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -32,7 +32,10 @@ class PhotoGalleryFragment : Fragment() {
                 // Callback is invoked after the user selects media items or closes the
                 // photo picker.
                 if (uri != null) {
-                    val action = PhotoGalleryFragmentDirections.actionPhotoGalleryFragmentToSetPhotoDataFragment(uri.toString())
+                    val action =
+                        PhotoGalleryFragmentDirections.actionPhotoGalleryFragmentToSetPhotoDataFragment(
+                            uri.toString()
+                        )
                     Navigation.findNavController(binding.root).navigate(action)
                 } else {
                     binding.errorImageSelectedIv.visibility = View.VISIBLE

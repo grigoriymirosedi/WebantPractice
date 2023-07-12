@@ -1,4 +1,4 @@
-package com.example.webantpractice.screens.fragments
+package com.example.webantpractice.presentation.screens.fragments
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -10,9 +10,9 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.webantpractice.R
-import com.example.webantpractice.adapters.UserProfileGalleryAdapter
+import com.example.webantpractice.presentation.adapters.UserProfileGalleryAdapter
 import com.example.webantpractice.databinding.FragmentUserProfileBinding
-import com.example.webantpractice.models.GalleryPhotoItem
+import com.example.webantpractice.presentation.models.GalleryPhotoItem
 
 class UserProfileFragment : Fragment() {
 
@@ -46,8 +46,10 @@ class UserProfileFragment : Fragment() {
         }
 
         userProfileGalleryAdapter = UserProfileGalleryAdapter(userGalleryList)
-        userProfileGalleryRV.layoutManager = GridLayoutManager(requireContext(), 4)
-        userProfileGalleryRV.adapter = userProfileGalleryAdapter
+//        userProfileGalleryRV.layoutManager = GridLayoutManager(requireContext(), 4)
+//        userProfileGalleryRV.adapter = userProfileGalleryAdapter
+        binding.userProfileGalleryRv.layoutManager = GridLayoutManager(requireContext(), 4)
+        binding.userProfileGalleryRv.adapter = userProfileGalleryAdapter
 
         binding.userProfileToolbar.setOnMenuItemClickListener {
             when(it.itemId) {
